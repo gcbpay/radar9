@@ -1,0 +1,10 @@
+[Unit]
+Description=r8 Peer-to-Peer Network Daemon
+ 
+[Service]
+Type=simple
+User=nobody
+ExecStart=/usr/bin/r8d --conf=/etc/r8d/r8d.cfg
+ 
+[Install]
+WantedBy=multi-user.target
